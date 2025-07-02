@@ -1,0 +1,179 @@
+[
+    {
+      "id": 1,
+      "nombre": "El Loco",
+      "significado": ["Nuevos comienzos", "Aventura", "impulso creativo"],
+      "invertido": ["Imprudencia", "Falta de dirección", "Irresponsabilidad"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elLoco.jpeg"
+    },
+    {
+      "id": 2,
+      "nombre": "El Mago",
+      "significado": ["Habilidad", "concreción de deseos", "Poder"],
+      "invertido": ["Manipulación", "Falta de planificación", "Engaño"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elMago.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "La Sacerdotisa",
+      "significado": ["Intuición", "Misterio", "escucha profunda"],
+      "invertido": ["Secretos", "Desconexión", "nebulosa mental"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laSacerdotisa.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "La Emperatriz",
+      "significado": ["Abundancia", "Creatividad", "conexión con lo natural"],
+      "invertido": ["Dependencia", "Negligencia", "inmovilidad emocional"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laEmperatriz.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "El Emperador",
+      "significado": ["Estructura", "Autoridad", "Estabilidad"],
+      "invertido": ["Tiranía", "Rigidez", "Falta de control"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elEmperador.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "El Hierofante",
+      "significado": ["Tradición", "Espiritualidad", "aprendizaje formal"],
+      "invertido": ["Dogmatismo", "Rebeldía", "Restricciones"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elHierophant.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Los Enamorados",
+      "significado": ["Amor", "Relaciones", "elecciones significativas"],
+      "invertido": ["Desarmonía", "Desequilibrio", "Conflicto"],
+      "palo": "Arcanos Mayores",
+      "imagen": "losEnamorados.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "El Carro",
+      "significado": ["Determinación", "Triunfo", "dominio de la situación"],
+      "invertido": ["Falta de dirección", "Agresión", "Inseguridad"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elCarro.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "La Justicia",
+      "significado": ["Justicia", "búsqueda de lo justo", "Equilibrio"],
+      "invertido": ["Injusticia", "Parcialidad", "Deshonestidad"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laJusticia.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "El Ermitaño",
+      "significado": ["Introspección", "retiro necesario", "Sabiduría"],
+      "invertido": ["Aislamiento", "retiro necesario", "nebulosa mental"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elErmitaño.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "La Rueda de la Fortuna",
+      "significado": ["Cambio", "Suerte", "giros inevitables"],
+      "invertido": ["Resistencia al cambio", "Mala suerte", "Inestabilidad"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laRuedaDeLaFortuna.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "La Fuerza",
+      "significado": ["Valor", "tolerancia activa", "dominio de la situación"],
+      "invertido": ["Debilidad", "Duda", "Falta de autocontrol"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laFuerza.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "El Colgado",
+      "significado": ["Suspensión", "Sacrificio", "visión ampliada"],
+      "invertido": ["inmovilidad emocional", "Resistencia", "Falta de visión"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elColgado.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "La Muerte",
+      "significado": ["Transformación", "Fin de ciclo", "Cambio"],
+      "invertido": ["Resistencia al cambio", "bloqueo emocional", "inmovilidad emocional"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laMuerte.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "La Templanza",
+      "significado": ["Equilibrio", "Moderación", "equilibrio emocional"],
+      "invertido": ["Exceso", "Desequilibrio", "Falta de paciencia"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laTemplanza.jpg"
+    },
+    {
+      "id": 16,
+      "nombre": "El Diablo",
+      "significado": ["Apego", "Materialismo", "ataduras nocivas"],
+      "invertido": ["Liberación", "Independencia", "dominio de la situación"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elDiablo.jpg"
+    },
+    {
+      "id": 17,
+      "nombre": "La Torre",
+      "significado": ["Crisis", "Cambio repentino", "desenmascaramiento interno"],
+      "invertido": ["Evitar el desastre", "Miedo al cambio", "Resistencia"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laTorre.jpg"
+    },
+    {
+      "id": 18,
+      "nombre": "La Estrella",
+      "significado": ["Esperanza", "Inspiración", "Renovación"],
+      "invertido": ["Pesimismo", "Desilusión", "Falta de fe"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laEstrella.jpg"
+    },
+    {
+      "id": 19,
+      "nombre": "La Luna",
+      "significado": ["Intuición", "Ilusiones", "mundo interior"],
+      "invertido": ["nebulosa mental", "Engaño", "bloqueo emocional"],
+      "palo": "Arcanos Mayores",
+      "imagen": "laLuna.jpg"
+    },
+    {
+      "id": 20,
+      "nombre": "El Sol",
+      "significado": ["Felicidad", "Éxito", "lucidez mental"],
+      "invertido": ["Bloqueos", "Desilusión", "Dudas"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elSol.jpg"
+    },
+    {
+      "id": 21,
+      "nombre": "El Juicio",
+      "significado": ["Renacimiento", "Juicio", "revisión profunda"],
+      "invertido": ["Autocrítica", "Duda", "Falta de decisión"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elJuicio.jpg"
+    },
+    {
+      "id": 22,
+      "nombre": "El Mundo",
+      "significado": ["Finalización", "Integración", "culminación exitosa"],
+      "invertido": ["Falta de cierre", "inmovilidad emocional", "Incompletitud"],
+      "palo": "Arcanos Mayores",
+      "imagen": "elMundo.jpg"
+    }
+  ]
+  

@@ -1,0 +1,242 @@
+/* -----------------------------------
+   Fuentes y variables de color
+----------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --card-bg: rgba(39, 39, 39, 0.85);
+  --card-border: rgba(231, 217, 196, 0.2);
+  --text-color: #cbc4e7;
+  --accent-color: #531a5d;
+  --input-border: #555;
+  --shadow-light: rgba(231, 217, 196, 0.15);
+}
+
+/* -----------------------------------
+   Reset y tipografía global
+----------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------
+   General y fondo estrellado completo
+----------------------------------- */
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: var(--text-color);
+  margin: 0;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+/* Fondo completamente oscuro + gradual*/
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 90%);
+  z-index: -1;
+}
+
+/* Fondo estrellado */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%22800%22 height%3D%22800%22 viewBox%3D%220 0 800 800%22%3E%3Cg fill%3D%22%23e7d9c4%22 fill-opacity%3D%220.8%22%3E%3Ccircle cx%3D%22130%22 cy%3D%22120%22 r%3D%222%22/%3E%3Ccircle cx%3D%22400%22 cy%3D%22300%22 r%3D%221.5%22/%3E%3Ccircle cx%3D%22700%22 cy%3D%22500%22 r%3D%221%22/%3E%3Ccircle cx%3D%22350%22 cy%3D%22700%22 r%3D%221.5%22/%3E%3Ccircle cx%3D%22600%22 cy%3D%2280%22 r%3D%222%22/%3E%3Ccircle cx%3D%22150%22 cy%3D%22650%22 r%3D%221%22/%3E%3C/g%3E%3C/svg%3E');
+  z-index: -1;
+  animation: twinkling 5s infinite;
+}
+
+/* Animación de estrellas chispeantes */
+@keyframes twinkling {
+  0%, 100% { opacity: 0.7; }
+  60%      { opacity: 1; }
+}
+
+/* -----------------------------------
+   Contenedor principal
+----------------------------------- */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* -----------------------------------
+   Encabezados
+----------------------------------- */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+h1 { font-size: 3rem; }
+ h2 { font-size: 2.25rem; }
+ h3 { font-size: 1.75rem; }
+
+/* -----------------------------------
+   Formulario centrado y estilizado
+----------------------------------- */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  background: rgba(220, 148, 220, 0.653);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow-light);
+  margin-bottom: 2rem;
+}
+
+.form label {
+  align-self: flex-start;
+  margin-bottom: 0.25rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.form input[type="text"],
+.form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  background-color: #333;
+  color: var(--text-color);
+  transition: border-color 0.2s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+/* -----------------------------------
+   Botones morados y elegantes
+----------------------------------- */
+button {
+  padding: 0.75rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #5a555b;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+/* -----------------------------------
+   Mensajes de error
+----------------------------------- */
+.error {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* -----------------------------------
+   Grid de cartas más compacto
+----------------------------------- */
+.cartas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+/* -----------------------------------
+   Contenedor de cada carta
+----------------------------------- */
+.carta {
+  width: 100%;
+  max-width: 220px;
+  background-color: var(--card
+
+
+
+  shadow-light);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px var(--shadow-light);
+}
+
+/* -----------------------------------
+   Imágenes de cartas proporcional
+----------------------------------- */
+.carta-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.carta:not(.carta-invertida):hover .carta-img {
+  transform: scale(1.1);
+}
+
+.carta-invertida .carta-img { transform: rotate(180deg); }
+.carta-invertida:hover .carta-img { transform: rotate(0deg) scale(1.1); }
+
+/* -----------------------------------
+   Texto de interpretación más legible
+----------------------------------- */
+.interpretacion {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  text-align: justify;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow-light);
+}
