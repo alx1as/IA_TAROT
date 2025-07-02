@@ -27,4 +27,4 @@ dist-ssr
 /backend/.env
 
 # Ignorar build estático del frontend
-/frontend/dist/
+
