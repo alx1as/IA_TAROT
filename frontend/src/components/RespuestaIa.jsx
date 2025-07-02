@@ -14,7 +14,7 @@ function RespuestaIa({ pregunta, cartas }) {
       setRespuesta('');
 
       try {
-        const response = await fetch('http://localhost:5000/api/interpretar', {
+        const response = await fetch('/api/interpretar', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ pregunta, cartas }),

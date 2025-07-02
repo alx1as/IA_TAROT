@@ -17,7 +17,7 @@ function App() {
     setCartas([]);
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/tirada', {
+      const response = await fetch('/api/tirada', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
